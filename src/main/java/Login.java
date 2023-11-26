@@ -17,7 +17,6 @@ public class Login extends JFrame {
     loginButton.addActionListener(new ActionListener() {
       @Override
       public void actionPerformed(ActionEvent e) {
-
         new Client();
         dispose();
       }
