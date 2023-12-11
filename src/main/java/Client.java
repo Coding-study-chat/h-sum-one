@@ -1,3 +1,5 @@
+package main.java;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -9,7 +11,7 @@ public class Client extends JFrame {
     JButton diary = new JButton("DIARY");
     JButton chat = new JButton("CHAT");
 
-    chat.addActionListener(new ActionListener() {
+    /*chat.addActionListener(new ActionListener() {
       @Override
       public void actionPerformed(ActionEvent e) {
         myThread = new Thread(new Runnable() {
@@ -20,7 +22,7 @@ public class Client extends JFrame {
         });
         myThread.start();
       }
-    });
+    });*/
 
     panel.add(chat);
     panel.add(diary);

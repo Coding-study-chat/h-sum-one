@@ -1,3 +1,5 @@
+package main.java;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -17,7 +19,8 @@ public class Login extends JFrame {
     loginButton.addActionListener(new ActionListener() {
       @Override
       public void actionPerformed(ActionEvent e) {
-        new Client();
+        //new Client();
+    	new MainGUI("localhost", 54321);
         dispose();
       }
     });
@@ -26,6 +29,7 @@ public class Login extends JFrame {
       @Override
       public void actionPerformed(ActionEvent e) {
         new Register();
+    	
         setVisible(false);
       }
     });
